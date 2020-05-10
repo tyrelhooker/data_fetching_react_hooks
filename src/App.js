@@ -12,7 +12,7 @@ function App() {
 
   const fetchData = async () => {
     const result = await fetch(USER_SERVICE_URL)
-      .then(res => res.json())
+      .then(result => result.json())
       .then(
         (result) => {
           setIsLoaded(true);
